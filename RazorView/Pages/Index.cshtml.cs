@@ -38,12 +38,12 @@ namespace RazorView.Pages
             if (string.IsNullOrEmpty(Search))
             {
                 Articles = await _context.Articles.Include(p => p.CountryCodeNavigation).Include(p => p.IdAuthorNavigation).
-                    Include(p => p.IdSourceNavigation).Include(p => p.IdStateNavigation).ToListAsync();
+                    Include(p => p.IdSourceNavigation).Include(p => p.IdStateNavigation).Where(p => p.IdState == 1) .ToListAsync();
             }
             else
             {
                 Articles = await _context.Articles.Include(p => p.CountryCodeNavigation).Include(p => p.IdAuthorNavigation).
-                    Include(p => p.IdSourceNavigation).Include(p => p.IdStateNavigation).Where(p => p.Title.Contains(Search)).ToListAsync()
+                    Include(p => p.IdSourceNavigation).Include(p => p.IdStateNavigation).Where(p => p.Title.Contains(Search) & p.IdState ==1).ToListAsync()
 
 
 

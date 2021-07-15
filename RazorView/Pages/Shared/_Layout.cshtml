@@ -1,7 +1,9 @@
 ﻿<!DOCTYPE html>
 
 @model RazorView.Pages.IndexModel
-
+@{
+    ViewData["Title"] = "Layout";
+}
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -41,9 +43,12 @@
                 </a>
 
                 <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-                    Title: <input class="form-control" type="search"  name="Search" value="@ViewData["Search"]" placeholder="Search..." aria-label="Search" />
-                    
+                    Title: <input class="form-control" type="search" name="Search" value="@ViewData["Search"]" placeholder="Search..." aria-label="Search" />
+
                 </form>
+                @*Categoria: <select asp-for="CountryCode" class="form-control" asp-items="ViewBag.CountryCode">
+
+        </select>*@
 
 
             </div>

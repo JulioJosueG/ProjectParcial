@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31313.79
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{8A4CA1B2-ADF1-4C9A-BE5D-3187968D5FD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorView", "RazorView\RazorView.csproj", "{D2A57E6D-2417-41EF-BAB3-9F767174815B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCAdm", "MVCAdm\MVCAdm.csproj", "{61894B6E-E74F-4D9B-875E-DF485206F83B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A4CA1B2-ADF1-4C9A-BE5D-3187968D5FD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A4CA1B2-ADF1-4C9A-BE5D-3187968D5FD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A4CA1B2-ADF1-4C9A-BE5D-3187968D5FD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A4CA1B2-ADF1-4C9A-BE5D-3187968D5FD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2A57E6D-2417-41EF-BAB3-9F767174815B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2A57E6D-2417-41EF-BAB3-9F767174815B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2A57E6D-2417-41EF-BAB3-9F767174815B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2A57E6D-2417-41EF-BAB3-9F767174815B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61894B6E-E74F-4D9B-875E-DF485206F83B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61894B6E-E74F-4D9B-875E-DF485206F83B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61894B6E-E74F-4D9B-875E-DF485206F83B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61894B6E-E74F-4D9B-875E-DF485206F83B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {21C42CEF-B699-4252-A86F-79006E8054FA}
+	EndGlobalSection
+EndGlobal

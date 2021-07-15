@@ -32,10 +32,10 @@ namespace RazorView.Pages
         public int[] arreglo = { 1, 2, 3, 4 };
         
 
-        public async Task  OnGetAsync(string SearchString= null)
+        public async Task  OnGetAsync(string Search = null)
         {
           
-            if (string.IsNullOrEmpty(SearchString))
+            if (string.IsNullOrEmpty(Search))
             {
                 Articles = await _context.Articles.Include(p => p.CountryCodeNavigation).Include(p => p.IdAuthorNavigation).
                     Include(p => p.IdSourceNavigation).Include(p => p.IdStateNavigation).ToListAsync();
@@ -43,7 +43,10 @@ namespace RazorView.Pages
             else
             {
                 Articles = await _context.Articles.Include(p => p.CountryCodeNavigation).Include(p => p.IdAuthorNavigation).
-                    Include(p => p.IdSourceNavigation).Include(p => p.IdStateNavigation).Where(p => p.Title.Contains(SearchString)).ToListAsync()
+                    Include(p => p.IdSourceNavigation).Include(p => p.IdStateNavigation).Where(p => p.Title.Contains(Search)).ToListAsync()
+
+
+
                     ;
             }
 

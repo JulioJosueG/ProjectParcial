@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 #nullable disable
 
@@ -13,8 +14,11 @@ namespace DataAccess
             Authors = new HashSet<Author>();
         }
 
+        [Required]
         public string Code { get; set; }
+        [Required]
         public string CountryName { get; set; }
+        [Required]
         public int? IdState { get; set; }
 
         public virtual State IdStateNavigation { get; set; }
